@@ -37,6 +37,7 @@ ON DELETE SET NULL -- Si un producto se borra, los pedidos quedan sin producto
 
 
 ```sql
+DELIMITER //
 CREATE TRIGGER validar_stock_pedido
 BEFORE INSERT ON Pedidos
 FOR EACH ROW
@@ -52,4 +53,6 @@ SIGNAL SQLSTATE '45000'
 SET MESSAGE_TEXT = 'No hay suficiente stock para este pedido.';
 END IF;
 END;
+
+DELIMITER ;
 ```

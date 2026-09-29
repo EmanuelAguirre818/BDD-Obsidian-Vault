@@ -1,10 +1,12 @@
 ## Procedimientos: 
 Es un conjunto de instrucciones logicas que se almacenan en el servidor de la base de datos y pueden ser invocados por su nombre, pueden recibir parametros.
 
+Podemos usar esta [[ESTRUCTURA  BASICA PROCEDIMIENTO ALMACENADO CON TRANSACCIONES]] para guiarnos a la hora de realizar esta operacion.
+
 **CREACION:**
 ```sql
 DELIMITER ///
-CREATE PROCEDURE nombre_procedimiento (|tipo parametro| nombre_parametro)
+CREATE PROCEDURE nombre_procedimiento (|tipo parametro| nombre_parametro |tipo_dato|)
 BEGIN
 	---Instrucciones
 END ///
@@ -62,3 +64,5 @@ En ambos recursos es normal encontrarnos con instrucciones como:
 - [[Transacciones]]
 
 En transacciones podemos usar [[ERROR HANDLERS]]:
+
+

@@ -13,7 +13,7 @@ WITH |CASCADED | LOCAL| CHECK OPTION; -- Esto no es obligatorio.
 
 Eliminacion:
 ```sql
-DROP VIEW IF EXIST nombre_vista
+DROP VIEW IF EXISTS nombre_vista
 ```
 
 - Las vistas puede ser actualizables mediante [[UPDATE, INSERT, SET]] solo si:
